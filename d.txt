@@ -3,7 +3,7 @@
 
 Name:	sula.foxymoron.tv
 Address: 52.74.237.39
-vaibhav ingle
+vaibhav ingle foxymoron
 
 ** server can't find sulafest.foxymoron.tv: NXDOMAIN
 
