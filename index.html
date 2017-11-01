@@ -1861,10 +1861,16 @@
                   <a href="#" title="More">More</a>
                </div>
                <div class="socialicon">
-                  <div class="btnso">
+                  <!-- <div class="btnso">
                      <a href="#Archives" title="Archives">Archives</a>
                      <a href="#Subscribe" title="Subscribe">Subscribe</a>
-                  </div>
+                  </div> -->
+                  <a href="#" title="">
+                     <img src="img/arcive.png" class="pull-right" alt="Archives">
+                  </a>
+                  <a href="#" title="">
+                     <img src="img/subscribe.png" class="pull-right" alt="subscribe">
+                  </a>
                   <div class="clearfix"></div>
                   <div class="bottomsocial socialicontd">
                      <span>Follow Us:</span>
@@ -1963,6 +1969,38 @@
                      source: $(this).data('url')
                  });
              });
+
+             
+        function resizeForm(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+        if(width > 1023){
+
+          $(".carousel-caption1.imghover01").hide();
+        $( ".smallericon" ).mouseover(function() {
+          $(".carousel-caption1.imghover01").show();
+        });
+        $( ".smallericon" ).mouseleave(function() {
+          $(".carousel-caption1.imghover01").hide();
+        });
+
+        } else {
+
+          $(".carousel-caption1.imghover01").hide();
+        $( ".smallericon" ).mouseover(function() {
+          $(".carousel-caption1.imghover01").hide();
+        });
+        $( ".smallericon" ).mouseleave(function() {
+          $(".carousel-caption1.imghover01").hide();
+        });
+
+
+          //alert('hi');
+          $(".alldihd").hide();
+
+        }  //else  
+    }
+         window.onresize = resizeForm;
+    resizeForm();
          });
       </script>
       <!-- <script src="js/aos.js"></script> -->
@@ -1975,6 +2013,7 @@
              autoplay: 5500,
              //autoplayDisableOnInteraction: false
          });
+
       </script>
    </body>
 </html>
